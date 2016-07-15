@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Registro de Usuario </title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+		form#formulario
+		{
+			background-color: #eee;
+			padding: 0px;
+			width: 350px;
+			height: 350px;
+			border-radius:10px;
+			border:2px solid red;
+		}
+
+		.lista
+		{
+			margin: 15px;
+			list-style: none;
+		}
+
+		.lista li
+		{
+			width:200px;
+			margin-bottom: 20px;
+		}
+
+		.lista li input
+		{
+			width: 220px;
+			padding:5px;
+		}
+
+		.lista li label
+		{
+			font-weight: bold;
+		}
+
+		.lista li input[type="submit"]
+		{
+			background-color: #2CBADD;
+			padding:2px;
+			width: 100px;
+			color:white;
+		}
+
+	</style>
+</head>
+<body>
+
+	<a href="javascript: md();">Mostrar Formulario</a>
+
+	<form action="registro.php" method="post" id="formulario" style="display: none;">
+		
+
+		<ul class="lista">
+
+			<li>
+				<label>Nombre de Usuario</label>
+				<input name="nick" type="text" required="required" placeholder="Ingrese Su Nombre de Usuario">
+			</li>
+
+			<li>
+				<label>Email</label>
+				<input name="email" type="text" required="required" placeholder="Ingrese Su Correo">
+			</li>
+
+			<li>
+				<label>Contraseña<label/>
+				<input name="pass" type="password" required="required" placeholder="Ingrese Su Contraseña">
+			</li>
+
+			<li>
+				<label>Repita Su Contraseña<label/>
+				<input name="pass2" type="password" required="required" placeholder="Confirma Tu Contraseña">
+			</li>
+
+			<li>
+				<input type="submit" name="enviar" value="Registrarme"/>
+			</li>
+
+
+		</ul>
+
+	</form>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript">
+		function md()
+		{
+			var formulario = $('#formulario');
+			return formulario.slideDown();
+		}
+	</script>
+
+	<?php
+		if (isset($_POST['submit']))
+		{
+			require("registro.php");
+		}
+	?>
+
+
+
+</body>
+</html>

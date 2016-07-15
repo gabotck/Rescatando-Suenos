@@ -1,0 +1,184 @@
+<!-- Here I Define That It's a HTML Document, Specifically version 5 -->
+<!DOCTYPE html>
+<!-- Here I Define with the lang Attribute, wich is the language of the Document -->
+<html lang="es">
+
+	<head>
+		<!-- Here I Define the character set of the Document, So I Can Use Special characters Normally whitout bugs -->
+		<meta charset="UTF-8" />
+		<!-- Here I Write the description of the website -->
+		<meta name="description" content="Bienvenidos a la Fundacion AdoptAmor. Aquí No compras el Amor, Lo Adoptas." />
+		<!-- Here I specify the keywords of the page, It serves to optimize searches in browsers -->
+		<meta name="keywords" content="fundacion, animales, gatos, perros, mascotas, adopcion, caninos, felinos, adoptar, refugio, canes, collares, concentrados, dog chow, purina, patas, ladridos, ladrar, maullar, maulla, amigo del hombre, animal domestico, gran danes, lobo siberiano, pitbull, san bernardo, beagle, bulldog, dalmata, doberman" />
+		<!-- Here I Link the Cascading Styles Sheets to the HTML Document -->
+		<link rel="stylesheet" type="text/css" href="css3/estilosfundacion.css">
+		<!-- Aquí Se define el Icono que se muestra en la pestaña superior del Navegador -->
+		<link rel="shorcut icon" type="x-icon" href="img/favicon.ico">
+		<!-- Aquí se inserta el archivo de fuentes de los iconos play, stop, previous and next del slider -->
+		<link rel="stylesheet" href="css3/fontsfundacion.css">
+		<!-- Here I Specify the title of the document, It will appear in the Browser tab -->
+		<title>Nuestras Mascotas</title>
+	</head>
+
+	<!-- This is the body of the Document, So This is which The user will view in the page -->
+	<body>
+		<!-- La etiqueta header es nueva en HTML5, aquí se define la cabecera del Documento -->
+		<header>
+			<!-- Aquí en el Div identificado como Subheader se coloca en una sola división el Logotipo y el Menú de Navegación, que luego sera centrado en la página-->
+			<div id="subheader">
+				<!-- Esta división contiene el Logotipo del sitio, que en este caso es un Logotipo con texto pero al que se le da forma con CSS3 -->
+				<div id="logotipo"> <p> <a href="">Fundación Adoptamor</a> </p> </div>
+				<!-- Utilizamos la etiqueta Nav para crear el Menú de Navegación -->
+				<nav>
+					<!-- Utilizamos la etiqueta para crear un Lista Desordenada de Items en el Menú, Se refiere a Unordered List -->
+					<ul>
+						<!-- Creamos cada uno de los Item de Lista, Se refiere a List Item -->
+						<li><a href="index.html">Home</a> </li>
+						<li><a href="nosotros.html">Nosotros</a> </li>
+						<li><a href="historias.html">Historias</a> </li>
+						<li><a href="mascotas.html">Mascotas</a> </li>
+						<li><a href="contacto.html">Contacto</a> </li>
+					</ul>
+				</nav> 
+			</div> <!-- Etiqueta de cierre del Div Subheader -->
+		</header> <!-- Etiqueta de cierre del header -->
+		
+		<!-- Se crea una Sección con el el Wrap Content o Contenedor Principal (Wrap es envolver) Así que es el que envuelve todo el Contenido. En este caso contendrá lo que es el Main y el Footer-->
+		<section id="wrap">
+			<!-- Dentro del Contenedor principal se crea la sección Main que contendrá Slideshow, Bienvenidos, Contenido, Aside -->
+			<section id="main">
+
+				<div class="slideshows">
+					
+					<div id="slider1">
+						<div class="slides">
+							<img src="img/perro1.png" alt="Imagen de Perro">
+							<img src="img/perro2.png" alt="Imagen de Perro">
+							<img src="img/perro3.png" alt="Imagen de Perro">
+						</div>
+					</div>
+
+					<div id="slider2">
+						<div class="slides">
+							<img src="img/gato1.png" alt="Imagen de Gato">
+							<img src="img/gato2.png" alt="Imagen de Gato">
+							<img src="img/gato3.png" alt="Imagen de Gato">
+						</div>
+					</div>
+
+				</div>
+
+				<section id="bienvenidos">
+					<article>
+						<hgroup><h3>Las Mascotas de La Fundación Adoptamor</h3> </hgroup>
+						<p>
+							<li>Contamos con Perros y Gatos que necesitan de tí, ayúdalos ya que ellos te lo agradecerán</li>
+							<li>Hemos encontrado hermosos cachorros y perritos de diferentes razas que pueden ser tuyos</li>
+							<li>También tenemos hermosos gatos que te acompañarán a donde quiera que vayas, acógelo.</li>
+							<li>Con nuestros cuidados en el tiempo que los tengamos, avanzaran en su recuperación</li>
+						</p>
+					</article>
+				</section> <!-- Cierre de la Sección Bienvenidos -->
+
+				<section id="contenido">
+					<article>
+						<hgroup><h2 class="titulo">Manada de Perros</h2></hgroup>
+						<p class="fecha">26 de Junio de 2015</p>
+						<img class="thumb" src="img/manadaPerros.png" alt="Manada de Perros">
+						<p>Los perros son un poco mas apetecidos por las personas, aunque eso no significa que su amigo el Gato no lo sea.
+							Tenemos variedad de razas para que vengas y elijas el de tu preferencia. Ven, aquí te esperamos</p>
+					</article>
+
+					<article>
+						<hgroup><h2 class="titulo">Manada de Gatos</h2></hgroup>
+						<p class="fecha">27 de Junio de 2015</p>
+						<img class="thumb" src="img/manadaGatos.png" alt="Manada de Gatos" height="300">
+						<p>Los Gatos han ganado fama en los últimos años, y son muy tenidos en cuenta a la hora de adoptar un amigo.
+							Existen razas raras, extrañas y hasta asombrosas. Aquí en la Fundación Adoptamor tenemos el tuyo, ven por él.</p>
+					</article>
+
+				</section> <!-- Cierre de la Sección Contenido -->
+
+				<aside>
+					<!-- Se Utiliza el atributo class para determinar objetos del mismo tipo, para manejarlos como un solo elemento en CSS por ejemplo -->
+					<section class="widget">
+						<h3>Fundaciones Amigas</h3>
+						<ul>
+							<li><a href="http://www.fundacionanimalsafe.com/" target="_blank">Fundación Animal Safe</a></li>
+							<li><a href="http://www.fundacionmanoamiga.org.ar/" target="_blank">Fundación Mano Amiga</a></l>
+							<li><a href="http://www.fundacionanimalsalud.org/" target="_blank">Fundación Animal Salud</a></li>
+							<li><a href="http://reddeapoyocanino.org/" target="_blank">Red de Apoyo Canino</a></li>
+						</ul>
+					</section>
+
+					<section class="widget">
+						<h3>Animales, Nuestro Futuro</h3>
+						<img src="img/perroGato.png">
+					</section>
+
+				</aside> <!-- Etiqueta de Cierre del aside -->
+
+			</section> <!-- Cierre de la Sección Main -->
+
+			<footer>
+
+				<section id="acerca-de">
+					<article>
+						<hgroup><h3>Síganos en...</h3></hgroup>
+						<p>Síganos en Nuestras Redes Sociales y podrá enterarse de nuevas Noticias. Podrá compartir
+							e interactuar con otros usuarios diferentes vivencias, historias y anecdotas. Que esperas, ven por
+							tu Mascota.</p>
+					</article>
+				</section>
+
+				<section id="redes-s">
+					<div class="facebook"><a href="https://www.facebook.com/pages/Fundacion-Adoptarmor/259720660763629" target="_blank"></a></div>
+					<div class="twitter"><a href="https://twitter.com/" target="_blank"></a></div>
+					<div class="youtube"><a href="https://www.youtube.com" target="_blank"></a></div>
+					<div class="email"><a href="https://accounts.google.com/Login?hl=EN" target="_blank"></a></div>
+				</section>
+
+			</footer> <!-- Etiqueta de Cierre del Footer -->
+
+			<div id="copyright">
+				<p>Todos los Derechos Reservados</p>
+			</div>
+
+		</section> <!-- Cierre de la Sección Wrap -->
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.slides.js"></script>
+
+		<script>
+
+			$(function(){
+			  $(".slides").slidesjs({
+			    play: {
+			    	// Colocamos active en true para que se activen los botones de reproducir y pausar
+			      active: true,
+			        // [boolean] Generate the play and stop buttons.
+			        // You cannot use your own buttons. Sorry.
+			        // En effect colocamos el tipo de efecto que queremos, puede ser slide o fade
+			      effect: "slide",
+			        // [string] Can be either "slide" or "fade".
+			        // Colocamos en interval el valor de milisegundos para pasar de una imagen a otra
+			      interval: 3000,
+			        // [number] Time spent on each slide in milliseconds.
+			        //Colocamos la variable auto en true para que al cargar la página se reproduzca automáticamente
+			      auto: true,
+			        // [boolean] Start playing the slideshow on load.
+			      swap: true,
+			        // [boolean] show/hide stop and play buttons
+			      pauseOnHover: false,
+			        // [boolean] pause a playing slideshow on hover
+			      restartDelay: 2500
+			        // [number] restart delay on inactive slideshow
+			    }
+			  });
+			});
+
+		</script>
+			
+	</body>
+
+</html>

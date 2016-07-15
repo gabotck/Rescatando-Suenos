@@ -1,0 +1,527 @@
+@import url('resetAdopcion.css');
+@import url('fuentesAdopcion.css');
+
+/*--- Estilos Generales ---*/
+
+/* En este caso se Establecen los Estilos para el Cuerpo del Documento */
+body{
+	/* Se establece el color de Fondo para el cuerpo del Documento */
+	background: #2d2d2d;
+	/* Se determinan las Fuentes para el Documento, estas son Fuentes Comunes */
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+/* Los elementos a son Links. En este caso se quita la decoración y por tanto ya no tendrán subrayado */
+a {text-decoration: none; color:#FFF;}
+/* Se establece que al pasar el cursor sobre un Link, este se subraye */
+a:hover {text-decoration: underline;}
+
+/* Se identifica la Sección Wrap del documento */
+#wrap{
+	/* Se le da un ancho de 960px */
+	width: 960px;
+	/* Se utiliza auto para centrar el contenido */
+	margin: auto;
+	/* Se utiliza para impedir que objetos flotantes estén a la derecha o izquierda del Wrap */
+	clear:both;
+}
+
+/*--- HEADER ---*/
+header{
+	/* Aquí se establece que el Header ocupe todo el ancho máximo */
+	width: 100%;
+	/* Le indicamos que flote a la izquierda */
+	float: left;
+	/* Aquí se le aplica un Fondo con Efecto Gradiente */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #e4e0e0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#e4e0e0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#e4e0e0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#e4e0e0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#e4e0e0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#e4e0e0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4e0e0',GradientType=0 ); /* IE6-9 */
+		/* Aquí se coloca la Sombra del Header con el Elemento box-shadow */
+		box-shadow: 0px 3px 5px #000;
+		-moz-box-shadow: 0px 3px 5px #000;
+		-webkit-box-shadow: 0px 3px 5px #000;
+	}
+/* El Subheader el cual contiene el Logo y El Menú de Navegación, ocupará el mismo ancho que el Wrap y también sera Centrado */
+#subheader{
+	width: 960px;
+	margin: auto;
+}
+
+/* Tanto el Logotipo como el Menú de Navegación se deben flotar a la izquierda */
+#logotipo{
+	float:left;
+	/* Se establece el ancho de esde div o contenedor*/
+	width: 460px;
+	/* Se establece el margen interno para arriba y abajo de 10px y para los lados de 0px. Sólo se aplica margen vertical */
+	padding:18px 0px;
+}
+
+/* Se establece la fuente, el tamaño, el color y otros para el Elemento a del Div Logotipo */
+#logotipo a{
+	font-family: sourcesans-Extralight;
+	font-size: 37px;
+	color: #000;
+}
+
+/* Aquí le indicamos que no queremos que se subraye al pasar el cursor sobre el Logotipo */
+#logotipo a:hover{
+	text-decoration: none;
+}
+
+
+/* Menu */
+header #subheader nav{
+	/* Se flota el Menú de Navegación a la Izquierda para que quede lo mas flotado posible junto al Logotipo y complete los 960px y no haya espacio
+	entre uno y otro */
+	float:left;
+	width: 500px;
+	padding:35px 0px;
+	text-align: right;
+}
+
+/* Aquí se define que los Elementos li se mostrarán el Linea */
+header #subheader nav ul li{
+	display:inline;
+	/* También se Define la Fuente de Letra */
+	font-family: sourcesans;
+}
+
+/* Se modifica el Elemento a que son los Links */
+header #subheader nav ul li a{
+	/* Se le da color negro a los Links */
+	color: #000;
+	/* Se le da un tamaño a la Letra */
+	font-size:18px;
+	/* Se le da un margen interno */
+	padding: 10px;
+		border-radius: 2px;
+		/* Se especifica este Efecto para Mozilla */
+		-moz-border-radius: 2px;
+		/* Se especifica este Efecto para Chrome */
+		-webkit-border-radius: 2px;
+
+}
+
+/* Aquí definimos que al pasar el cursor sobre los Links La letra va a cambiar de Color y también el Fondo */
+header #subheader nav ul li a:hover{
+	color: #FFF;
+	background: #1798AF;
+	/* Hacemos esto para quitar el subrayado */
+	text-decoration: none;
+}
+
+/*--- Main ---*/
+
+/* Aquí aplicamos los estilos al Main */
+#main{
+	/* Se define que ocupe todo el ancho posible */
+	width: 100%;
+	/* Se aplica margen superior solamente, para separar un poco el Header del SlideShow, primer elemento del Main que es el que en realidad se Separa  */
+	margin: 20px 0px 0px 0px;
+	/* De igual forma se flota a la Izquierda */
+	float: left;
+}
+
+/* Este Main es el Div que contiene los dos Slideshows */
+.slideshows {
+	/* Este es el valor del ancho del Slider, que sólo puede llegar hasta un límite que es el max-width que se especifíca a continuación */
+	width:960px;
+	/* En este caso establecemos un max-width de 1000px */
+	max-width:1000px;
+	/* Aplicamos un margen tanto superior como inferior de 20px y centramos el Slideshow */
+	margin:20px auto;
+}
+
+#slider1 {
+	float:left;
+	width:465px;
+	margin-right:30px;
+}
+
+/* Aquí le aplicamos al div contenido en Slider1 un Borde redondeado */
+#slider1 div {
+	border-radius:8px;
+		-webkit-border-radius:8px;
+		-moz-border-radius:8px;
+}
+
+/* Aquí le aplicamos al div contenido en Slider2 un Borde redondeado */
+#slider2 {
+	float:left;
+	width:465px;
+	text-align:right;
+}
+
+#slider2 div {
+	border-radius:8px;
+		-webkit-border-radius:8px;
+		-moz-border-radius:8px;
+}
+
+/* img Es cada una de las imágenes */
+.slides img {
+	/* Este ancho es para decirle que porcentaje del ancho de la imagen queremos que se muestre dentro del Div que las contiene, al aplicar este ancho
+	el alto se establece de forma proporcional por el navegador para que no haya desproporción. Sin embargo, también podemos cambiar su valor para que las
+	imágenes se vean completas aunque ya se verán de forma desproporcional */
+	width:100%;
+	height:100%;
+}
+
+/*--- PAGINATION ---*
+
+/* Este es el Elemento ul que contiene los li 1,2,3 Esto se genera en el Código HTML de las Librerías JQuery */
+.slidesjs-pagination {
+	background:#424242;
+	list-style:none;
+	overflow:hidden;
+}
+
+/* li es cada uno de los elementos de lista ul. */
+.slidesjs-pagination li {
+	/* Se flotan a la izquierda para que su posición uno al lado del otro */
+	float:left;
+}
+
+.slidesjs-pagination li a {
+	/* Se hace en bloque para poder modificar tanto ancho como el alto */
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	/* Se hace para evitar que haya subrayado al pasar el cursor por alguno de los números de paginación */
+	text-decoration:none;
+}
+
+/* Esto es para que al pasar el cursor por encima de una opción cambie de color de fondo */
+.slidesjs-pagination li a:hover {
+	background:red;
+}
+
+/* la Clase active es para cuando un elemento está seleccionado o activo se le aplique determinado estilo
+por ejemplo que la opción cambie de fonfo, en este caso es lo que hacemos */
+.slides .active {
+	background:#000;
+}
+
+/*--- NAVIGATION ---*/
+
+.slidesjs-navigation {
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	padding:11.5px 30px;
+	float:right;
+}
+
+/*--- Bienvenidos ---*/
+#bienvenidos{
+	/* Le aplicamos un ancho de 920px teniendo en cuenta que mas bajo le colocamos margenes laterales de 20px cada lado */
+	width: 920px;
+	float: left;
+	padding: 20px;
+	background: #46793a; /* Old browsers */
+		background: -moz-linear-gradient(top,  #46793a 0%, #207cca 0%, #46796a 0%, #2d4c1e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#46793a), color-stop(0%,#207cca), color-stop(0%,#46796a), color-stop(100%,#2d4c1e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #46793a 0%,#207cca 0%,#46796a 0%,#2d4c1e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #46793a 0%,#207cca 0%,#46796a 0%,#2d4c1e 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #46793a 0%,#207cca 0%,#46796a 0%,#2d4c1e 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #46793a 0%,#207cca 0%,#46796a 0%,#2d4c1e 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46793a', endColorstr='#2d4c1e',GradientType=0 ); /* IE6-9 */
+	/* Le colocamos margen vertical tanto arriba como abajo para separa un poco de las otras divisiones */
+	margin:20px 0px;
+	/* Colocamos un Borde redondeado a la caja */
+	border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	/* Colocamos una Sombra de color Negro */
+	box-shadow: 0px 2px 2px #000;
+		-moz-box-shadow: 0px 2px 2px #000;
+		-webkit-box-shadow: 0px 2px 2px #000;
+}
+
+#bienvenidos article h3{
+	/* Cambiamos la Fuente de Letra del h3 */
+	font-family: sourcesans-light;
+	/* Cambiamo el Color a Blanco */
+	color: #FFF;
+	/* Cambiamos el Tamaño de Letra */
+	font-size: 40px;
+	/* Colocamos una margen inferior para que se separe un poco del Párrafo */
+	margin-bottom: 10px;
+}
+
+#bienvenidos article{
+	/* Se cambia el color del Párrafo a color blanco */
+	color: #FFF;
+	/* Line-height establece la altura entre las líneas de texto */
+	line-height: 27px;
+}
+
+/*--- Contenido ---*/
+#contenido{
+	/* Se establece el ancho del contenido a 700 px, el resto lo ocupará el Sidebar o Aside */
+	width: 700px;
+	float:left;
+}
+
+#contenido article{
+	float: left;
+	/* Agregamos un margen inferior para separar un artículo de otro */
+	margin-bottom: 20px;
+}
+
+#contenido article .titulo{
+	/* Se define un tamaño de Letra */
+	font-size: 22px;
+	/* Se define la Fuente de Letra */
+	font-family: sourcesans;
+	/* Se define color Blanco */
+	color:#FFF;
+}
+
+#contenido article .fecha{
+	font-size: 14px;
+	color: #1798af;
+	/* Se define un margen inferior para separar un poco de la imagen */
+	margin-bottom: 5px;
+}
+
+#contenido article .thumb{
+	width: 220px;
+	height: 150px;
+	float: left;
+	/* En el margen se definen por orden superior, derecha, inferior e izquierda */
+	margin: 0px 10px 10px 0px;
+}
+
+/* En este caso aplica los estilos a los Elementos p que están directamente dentro de article */
+#contenido article > p{
+	/* Se cambia el color al Párrafo */
+	color: #8c8c8c;
+	font-size: 14px;
+	/* Aquí justificamos el párrafo */
+	text-align:justify;
+	/* Se determina el espacio entre lineas de texto del párrafo */
+	line-height: 18px;
+}
+
+
+/*--- Formulario ---*/
+
+form#formulario
+		{
+			background-color: #eee;
+			padding: 0px;
+			width: 700px;
+			height: 370px;
+			border-radius:10px;
+			border:2px solid red;
+		}
+
+		.lista
+		{
+			margin: 15px;
+			list-style: none;
+		}
+
+		.lista li
+		{
+			width:200px;
+			margin-bottom: 20px;
+		}
+
+		.lista li input
+		{
+			width: 220px;
+			padding:5px;
+		}
+
+		.lista li label
+		{
+			font-weight: bold;
+		}
+
+		.lista li input[type="submit"]
+		{
+			background-color: #2CBADD;
+			padding:2px;
+			width: 100px;
+			color:white;
+		}
+
+/*--- Sidebar ---*/
+
+aside{
+	/* Se aplica el ancho del Aside, que sumados al ancho del Contenido da 920px */
+	width: 220px;
+	float: left;
+	/* Esto 20px de margen a la Izquierda y los 920px de antes da 940px */
+	margin-left: 20px;
+	background: #4d78b3;
+	/* 10px superior 10px derecha 0px inferior 10px izquierda. 20px laterales mas 940 de antes da 960px Total*/
+	padding: 10px 10px 0px 10px;
+	border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	box-shadow: 0px 2px 2px #000;
+		-moz-box-shadow: 0px 2px 2px #000;
+		-webkit-box-shadow: 0px 2px 2px #000;
+}
+
+aside .widget{
+	/* Con esta margen inferior se separa un widget del otro, y se separa la imagen del borde de l caja */
+	margin-bottom: 10px;
+	float: left;
+}
+
+aside .widget > h3{
+	background: #FFF;
+	color: #4d78b3;
+	width: 220px;
+	/* Se centra el texto dentro de la caja */
+	text-align: center;
+	/* Margen interna de 10px vertical y 0px laterales */
+	padding: 10px 0px;
+	/* Para poner en letra Negrita */
+	font-weight: bold;
+	/* Margen para separar el título de los Links */
+	margin-bottom: 10px;
+}
+
+/* Asegurarnos de Color blanco en los Links */
+aside .widget a{color: #FFF;}
+/* Separa un Link de otro con esta margen inferior */
+aside .widget ul li{margin-bottom: 5px;}
+/* Aseguramos que el ancho de la imagen sea de 220px */
+aside .widget img{width: 220px;}
+
+/*--- Footer ---*/
+footer{
+	/* Se establece el ancho total de la página */
+	width: 100%;
+	float: left;
+	clear:both;
+	background-color:white;
+	/* Se coloca la sombra */
+	box-shadow: 0px 2px 2px #000;
+		-moz-box-shadow: 0px 2px 2px #000;
+		-webkit-box-shadow: 0px 2px 2px #000;
+	/* Se coloca el borde redondeado */
+	border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	/* Se coloca el Fondo con Efecto Gradiente */
+	background: #46793a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #46793a 0%, #207cca 0%, #2f2f2f 0%, #242424 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#46793a), color-stop(0%,#207cca), color-stop(0%,#2f2f2f), color-stop(100%,#242424)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #46793a 0%,#207cca 0%,#2f2f2f 0%,#242424 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #46793a 0%,#207cca 0%,#2f2f2f 0%,#242424 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #46793a 0%,#207cca 0%,#2f2f2f 0%,#242424 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #46793a 0%,#207cca 0%,#2f2f2f 0%,#242424 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46793a', endColorstr='#242424',GradientType=0 ); /* IE6-9 */
+	margin-bottom:10px;
+}
+
+/* Se aplica los estilos a las secciones que estén en el Footer */
+footer section{
+	/* Un ancho de 440px para cada sección ya que son dos suman 880px */
+	width: 440px;
+	float: left;
+	/* 880px anteriores más un relleno interno de 20px a cada lado por cada sección son 80px en Padding mas lo anterior da 960px */
+	padding:20px;
+}
+
+footer #acerca-de{
+	font-family: arial, helvetica, Sans-Serif;
+	font-size: 14px;
+	color: #8c8c8c;
+	float:left;
+	/* Se justifica el texto */
+	text-align: justify;
+	/* Separación entre cada línea de 20px */
+	line-height: 22px;
+	
+}
+
+footer #acerca-de h3 {
+	font-family: sourcesans-light;
+	font-size:22px;
+	color:#fff;
+	/* Margen inferior para separar el Título del Párrafo */
+	margin-bottom:7px;
+}
+
+/* Le indicamos que aplique estos estilos para todos los div que estén directamente dentro de redes-s */
+footer #redes-s > div {
+	/* ancho de 96px para cada red social, lo demas se complementa con rellenos y otras cosas */
+	width: 96px;
+	height: 96px;
+	/* Flotamos a la Izquierda */
+	float: left;
+	background-color: #ff8000;
+	/* Se aplica opacidad en escala de 0 a 1, siendo que en 0 se desaparece y en 1 es totalmente visible */
+	opacity: 0.7;
+	margin-top:33px;
+	margin-right: 10px;
+	border-radius:5px;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+}
+
+footer #redes-s > div:hover {
+	/* Esto lo hacemos para que cuando pasemos el cursor por encima de una red social esta tenga un efecto de total visibilidad y realce de color
+	ya que anteriormente le hemos quitado opacidad podemos lograr este efecto */
+	opacity:1;
+}
+
+footer #redes-s > div a{
+	width:96px;
+	height:96px;
+	display:inline-block;
+}
+
+#mision{
+	color: blue;
+	font-size: 25px;
+}
+
+footer #redes-s .facebook{
+	background:url(../img/facebook.png);
+}
+
+footer #redes-s .twitter{
+	background:url(../img/twitter.png);
+	margin-bottom: 40px;
+}
+
+footer #redes-s .youtube{
+	background:url(../img/youtube.png);
+}
+
+footer #redes-s .email{
+	background:url(../img/email2.png);
+	margin-bottom: 40px;
+}
+
+#copyright {
+	text-align: center;
+	
+}
+
+#copyright > p {
+	color: #fff;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
